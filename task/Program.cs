@@ -61,7 +61,8 @@ namespace task
                     Console.WriteLine("Create New Post." + Environment.NewLine);
                     Console.WriteLine("enter the posts : ");
                     posts = Console.ReadLine();
-                    post.CreatePost(posts);
+                    int statusCode = post.CreatePost(posts);
+                    Console.WriteLine("statusCode: " + statusCode);
                 }
                 if (x == 4)
                 {
@@ -69,7 +70,8 @@ namespace task
                     Console.WriteLine("enter the Id and the new post : ");
                     Id = Convert.ToInt32(Console.ReadLine());
                     posts = Console.ReadLine();
-                    post.UpdatePost(Id,posts);
+                    int statusCode = post.UpdatePost(Id,posts);
+                    Console.WriteLine("statusCode: " + statusCode);
                 }
                 if (x == 5)
                 {
@@ -77,7 +79,9 @@ namespace task
                     Console.WriteLine("enter the Id and the new post : ");
                     Id = Convert.ToInt32(Console.ReadLine());
                     posts = Console.ReadLine();
-                    post.UpdatePost(Id, posts);
+                    int statusCode = post.UpdatePost(Id, posts);
+                    Console.WriteLine("statusCode: " + statusCode);
+
                 }
                 if (x == 0)
                 {

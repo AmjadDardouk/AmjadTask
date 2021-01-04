@@ -8,7 +8,7 @@ namespace task.Models
         public int Id { get; set; }
 
         [StringLength(500)]
-        public string post { get; set; }
+        public string PostContent { get; set; }
 
         public int UserId { get; set; }
         
