@@ -20,7 +20,7 @@ namespace task
         {
             if (Program.userId == 0)
                 return 401;
-            if (!Program._context.Posts.Any(post => post.Id == id))
+            if (!Program._context.Posts.Any(post => post.Id == id && post => post.UserId == Program.userId))
                 return 403;
 
             Post post = Program._context.Posts.Where(post => post.Id == id).First();
@@ -34,7 +34,7 @@ namespace task
         {
             if (Program.userId == 0)
                 return 401;
-            if (!Program._context.Posts.Any(post => post.Id == id))
+            if (!Program._context.Posts.Any(post => post.Id == id && post => post.UserId == Program.userId))
                 return 403;
 
             Post post = Program._context.Posts.Where(post => post.Id == id).First();
