@@ -768,11 +768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amjad/projects/task/task/task.csproj",
+      "projectUniqueName": "/Users/amjad/Desktop/task/task/task.csproj",
       "projectName": "task",
-      "projectPath": "/Users/amjad/projects/task/task/task.csproj",
+      "projectPath": "/Users/amjad/Desktop/task/task/task.csproj",
       "packagesPath": "/Users/amjad/.nuget/packages/",
-      "outputPath": "/Users/amjad/projects/task/task/obj/",
+      "outputPath": "/Users/amjad/Desktop/task/task/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/amjad/.config/NuGet/NuGet.Config"

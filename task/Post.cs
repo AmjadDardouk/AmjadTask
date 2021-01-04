@@ -13,7 +13,7 @@ namespace task
         {
             if (Program.userId == 0)
                 return 401;
-            Program._context.Posts.Add(new Models.Post {UserId=Program.userId,Post=post,Created= currentDate,Updated= currentDate });
+            Program._context.Posts.Add(new Models.Post {UserId=Program.userId, PostContent = post,Created= currentDate,Updated= currentDate });
             return 200;
         }
         public int UpdatePost(int id,string newPost)
@@ -24,7 +24,7 @@ namespace task
                 return 403;
 
             Post post = Program._context.Posts.Where(post => post.Id == id).First();
-            post.Post = newPost;
+            post.PostContent = newPost;
             post.Created = currentDate;
             post.Updated = currentDate;
             Program._context.SaveChanges();
